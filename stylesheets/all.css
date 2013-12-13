@@ -294,7 +294,7 @@ ol {
   padding: 0;
   margin: 1em;
 }
-ul {
+.half ul {
   text-align: left;
   color: rgba(0,0,0,0.4);
 }
