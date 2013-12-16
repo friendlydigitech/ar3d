@@ -21,6 +21,26 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <script src="../javascripts/respond.min.js"></script>
   <![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44411572-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  var pageTracker = _gat._getTracker('UA-44411572-2');pageTracker._trackPageview();
+</script>
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-44411572-2");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
 </head>
 <body data-twttr-rendered="true" class="page home">
 
@@ -78,7 +98,7 @@
            產地：台灣<br />
            設計印製：台灣﻿</p><br /><br />
 
-        <a href="https://play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001" target="_blank"><img src="../images/AN.gif" alt="Google Play" class="download" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001" target="_blank" onClick="recordOutboundLink(this, 'Outbound Links', 'play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001');return false;"><img src="../images/AN.gif" alt="Google Play" class="download" /></a>
         <img src="../images/ios_comingsoon.gif" alt="App Store" class="download" /> <br /><br /> 
       </div>
     </section>
@@ -89,7 +109,7 @@
 
       <div>
         <a name="introduce"> </a>
-        <iframe class="youtube-player" type="text/html" src="http://www.youtube.com/embed/0ED63KZUEH0" frameborder="0" allowfullscreen></iframe><br/><br/><br/>
+        <iframe class="youtube-player" type="text/html" src="http://www.youtube.com/embed/9aXZIjc990I" frameborder="0" allowfullscreen></iframe><br/><br/><br/>
       </div>
 
     </section>
