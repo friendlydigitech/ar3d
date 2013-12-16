@@ -21,6 +21,24 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <script src="../javascripts/respond.min.js"></script>
   <![endif]-->
+  <script type="text/javascript">
+    function recordOutboundLink(link, category, action) {
+    try {
+    var myTracker=_gat._getTrackerByName();
+    _gaq.push(['myTracker._trackEvent', category ,  action ]);
+    setTimeout('document.location = "' + link.href + '"', 100)
+    }catch(err){}
+    }
+  </script>
+  <script type="text/javascript">
+    function recordOutboundLink(link, category, action) {
+    try {
+    var pageTracker=_gat._getTracker("UA-44411572-2");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+    }catch(err){}
+    }
+  </script> 
 </head>
 <body data-twttr-rendered="true" class="page home">
 
@@ -78,7 +96,7 @@
            產地：台灣<br />
            設計印製：台灣﻿</p><br /><br />
 
-        <a href="https://play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001" target="_blank"><img src="../images/AN.gif" alt="Google Play" class="download" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001" target="_blank" onClick="recordOutboundLink(this, 'Outbound Links', 'https://play.google.com/store/apps/details?id=com.FriendlyDigiTech.XMasCupTesting001');return false;"><img src="../images/AN.gif" alt="Google Play" class="download" /></a>
         <img src="../images/ios_comingsoon.gif" alt="App Store" class="download" /> <br /><br /> 
       </div>
     </section>
