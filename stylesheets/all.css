@@ -492,6 +492,11 @@ section > h1 {
   color: rgba(0,0,0,0.4);
   margin: 0 0 28px;
 }
+.home .featured p em {
+  font-family: "Alright Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+}
 .home .featured .button {
   position: relative;
   bottom: 0;
