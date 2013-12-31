@@ -289,15 +289,6 @@ img {
 .download {
   max-width: 70%;
 }
-ul,
-ol {
-  padding: 0;
-  margin: 1em;
-}
-.half ul {
-  text-align: left;
-  color: rgba(0,0,0,0.4);
-}
 a {
   color: #383838;
   text-decoration: none;
@@ -312,6 +303,75 @@ a:active {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
 }
+ul,
+ol {
+  padding: 0;
+  margin: 1em;
+}
+ul {
+  text-align: left;
+  display: inline;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 1em 0.2em;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #555;
+  color: #fff;
+}
+ul li a:hover {
+  background: #555;
+  color: #fff;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 1.2em;
+  left: -3em;
+  width: 400%;
+  text-align: center;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}   
+
+.half ul {
+  text-align: left;
+  color: rgba(0,0,0,0.4);
+}
+
 a.image {
   border: 0;
 }
