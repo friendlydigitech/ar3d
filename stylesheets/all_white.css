@@ -317,7 +317,7 @@ ul li {
   display: inline-block;
   margin-right: -4px;
   position: relative;
-  padding: 1em 0.2em;
+  padding: 0.6em 0.8em;
   background: #fff;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -339,7 +339,7 @@ ul li ul {
   padding: 0;
   position: absolute;
   top: 1.2em;
-  left: -3em;
+  left: -7.2em;
   width: 400%;
   text-align: center;
   -webkit-box-shadow: none;
